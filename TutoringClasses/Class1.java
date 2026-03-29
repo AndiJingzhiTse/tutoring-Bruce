@@ -7,30 +7,18 @@ class Class1 {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        // System.out.print("Enter an integer: ");
-        // int num = sc.nextInt();
-        // System.out.println("num: " + num); // "num: " + 5 => "num: 5"
-        // double twice = num * 2.0; // 5 * 2.0 => 10.0
-        // System.out.println("twice: " + twice); // "twice: " + 10.0 => "twice: 10.0"
 
-        System.out.print("Enter the diameter of the pizza in inches: ");
-        int diameter = sc.nextInt();
-        double cost = diameter * diameter * 0.05 + 1.75;
-        System.out.println("The cost of making the pizza is: $" + cost);
+        System.out.print("Please enter your name: ");
+        String name = sc.nextLine(); // next(), nextLine()
 
-        /*
-        if (true/false weather greater than 30) {
-            // code to execute if condition is true
-            wear shorts
-        } else {
-            // code to execute if condition is false
-        }
-         */
-        if (diameter > 14) {
-            System.out.println("The pizza falls under the large category");
-        } else {
-            System.out.println("The pizza is either a Small or Medium Pizza");
-        }
+        System.out.print("Please enter your age: ");
+        int age = sc.nextInt();
+
+        System.out.println(name + ", you are " + age + " years old.");
+        // name + ", you are " + age + " years old."
+        // Bruce + ", you are " + 8 + " years old."
+        // Bruce, you are 8 years old.
+        System.out.println(name + ", in 2030 you will be " + (age + 4) + " years old.");
     }
 
     public static void println() {
