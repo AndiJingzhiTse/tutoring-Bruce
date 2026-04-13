@@ -16,18 +16,32 @@ public class Class5 {
         // System.out.println("The aversge of six marks is = " + acc / 6);
         // int acc = 0;
         // for (int i = 1; i <= 5; i++) {
-        //     acc += i;
+        // acc += i;
         // }
         // System.out.println("the sum from 1 to 5 is = " + acc);
-        // 3 2 6 2 48 45 6 2 346 3456 234 2 234 4 456 34 4 5 5 7 2 3 2 3 4 5 6 7 8 9 10 1111 1111
-        int high = 0;
-        for (int i = 0; i < 5; i++) {
+        // 3 2 6 2 48 45 6 2 346 3456 234 2 234 4 456 34 4 5 5 7 2 3 2 3 4 5 6 7 8 9 10
+        // 1111 1111
+        // int high = 0;
+        // for (int i = 0; i < 5; i++) {
+        // int num = myScanner.nextInt();
+        // if (num > high) {
+        // high = num;
+        // }
+        // System.out.println("The highest number is: " + high);
+
+        // }
+
+        int low =Integer.MAX_VALUE;
+        System.out.println("please enter 5 integers");
+        for (int i = 1; i <= 5; i++) {
+
             int num = myScanner.nextInt();
-            if (num > high) {
-                high = num;
+            if (num < low) {
+                low = num;
             }
-            System.out.println("The highest number is: " + high);
         }
+        System.out.println("The lowest number is: " + low);
 
     }
+
 }
