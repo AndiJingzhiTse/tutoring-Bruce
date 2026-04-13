@@ -114,6 +114,8 @@ class Class4 {
         System.out.println("The sum of 5 numbesr is: " + acc);
     }
 
+    
+
     public static void println() {
         System.out.println();
     }
