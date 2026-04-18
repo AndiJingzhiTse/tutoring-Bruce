@@ -8,7 +8,6 @@ public class Class5 {
         Scanner myScanner = new Scanner(System.in);
         // double acc = 0;
 
-        // System.out.print("please enter three marks: ");
         // for (int i = 0; i < 6; i++) {
         // double marks = myScanner.nextDouble();
         // acc += marks;
@@ -32,16 +31,19 @@ public class Class5 {
         // }
 
         int low =Integer.MAX_VALUE;
+        int minIndex = 0;
+    
         System.out.println("please enter 5 integers");
         for (int i = 1; i <= 5; i++) {
 
             int num = myScanner.nextInt();
             if (num < low) {
                 low = num;
+                minIndex = i;
+
             }
         }
-        System.out.println("The lowest number is: " + low);
-
+        System.out.println("the " + minIndex + "ths is lowest number ");
     }
 
 }
