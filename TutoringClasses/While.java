@@ -49,8 +49,6 @@ class While {
         }
         System.out.println(acc / cnt); // 16 / 6
 
-        
-
     }
 
     public static void println() {
