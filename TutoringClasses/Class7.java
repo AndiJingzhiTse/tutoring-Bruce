@@ -7,69 +7,70 @@ public class Class7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String name = "Bruce";
-
-        int cnt = 0;
-        while (cnt < 10) {
-        cnt++;
-        System.out.println(name);
+        String fixedName = "Bruce";
+        int countToTen = 0;
+        while (countToTen < 10) {
+            countToTen++;
+            System.out.println(fixedName);
         }
 
-        int cnt = 0;
-        while (cnt < 100) {
-        System.out.println(cnt);
-        cnt++;
+        int countToHundred = 0;
+        while (countToHundred < 100) {
+            System.out.println(countToHundred);
+            countToHundred++;
         }
-        int cnt1 = 100;
-        while (cnt1 >= 0) {
-        System.out.println(cnt1);
-        cnt1--;
+
+        int reverseCount = 100;
+        while (reverseCount >= 0) {
+            System.out.println(reverseCount);
+            reverseCount--;
         }
+
         System.out.println("please enter a word:");
-        String name = sc.next();
+        String userWord = sc.next();
         System.out.println("please enter how many times you want to print it:");
-        int num = sc.nextInt();
-
-        // int cnt = 0;
-        // while (cnt < num) {
-        // System.out.println(name);
-        // cnt++;
-
-        
-        int cnt = 1;
-        int acc = 0;
-
-        while (cnt <= 10) {
-        System.out.println(cnt);
-        acc += cnt;
-        cnt++;
-
+        int repeatCount = sc.nextInt();
+        int printCounter = 0;
+        while (printCounter < repeatCount) {
+            System.out.println(userWord);
+            printCounter++;
         }
-        System.out.println(acc / 10.0)
-        String sw = "java";
-        System.out.println("please enter a word=");
-        String word = sc.next();
-        int cnt =1;
-        while (!word.equals(sw)){
-        System.out.println("Wrong please guess again");
-        System.out.println("please enter a word=");
-        word = sc.next();
-        cnt++;
+
+        int sumCounter = 1;
+        int sum = 0;
+        while (sumCounter <= 10) {
+            System.out.println(sumCounter);
+            sum += sumCounter;
+            sumCounter++;
         }
-        System.out.println("the word was=" + sw);
-        System.out.println("You got it in "+cnt+" guesses");
-        int num = 0;
+        System.out.println(sum / 10.0);
+
+        String answer = "java";
+        System.out.println("please enter a word=");
+        String guess = sc.next();
+        int guessCount = 1;
+        while (!guess.equals(answer)) {
+            System.out.println("Wrong please guess again");
+            System.out.println("please enter a word=");
+            guess = sc.next();
+            guessCount++;
+        }
+        System.out.println("the word was=" + answer);
+        System.out.println("You got it in " + guessCount + " guesses");
+
+        int doWhileCounter = 0;
         do {
             System.out.println("bruce");
-            num++;
-        } while (num < 10);
+            doWhileCounter++;
+        } while (doWhileCounter < 10);
 
-        int cnt = 0;
-        while (cnt < 10) {
-
+        int finalCounter = 0;
+        while (finalCounter < 10) {
             System.out.println("bruce");
-            cnt++;
+            finalCounter++;
         }
+
+        sc.close();
 
     }
 }
