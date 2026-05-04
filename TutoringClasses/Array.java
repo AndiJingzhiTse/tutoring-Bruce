@@ -8,9 +8,19 @@ public class Array {
         // for every number we want to store, we had to use a variable
         // array data structure
         // 1, 2, 3, 4, 9, 10, 126, -3
-        // <data_type>[] array_name = new <data_type>[<size>];
-        int[] arr = new int[5]; // declared an int array arr with size 5, arr can store 5 int
-        int[] arr1 = {1, 2, 3, 4, 5}; // save work
+        // <data_type>[] array_name = new <data_type>[<length>];
+        int[] arr = new int[5]; // declared an int array arr with length 5, arr can store 5 int
+        int[] arr1 = {133, 13, -1, 0, -999}; // save work
+
+        /*
+        int[] arr1 = new int[5];
+        arr1[0] = 133;
+        arr1[1] = 13;
+        arr1[2] = -1;
+        arr1[3] = 0;
+        arr1[4] = -999;
+         */
+        
         arr[0] = -3; // 0-index
         System.out.println(arr[0]); // -3
         arr[0] = -5;
@@ -25,7 +35,7 @@ public class Array {
 
         int num = arr[0];
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
 

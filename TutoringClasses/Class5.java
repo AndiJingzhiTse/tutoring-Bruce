@@ -9,29 +9,29 @@ public class Class5 {
         double acc = 0;
 
         for (int i = 0; i < 6; i++) {
-        double marks = myScanner.nextDouble();
-        acc += marks;
+            double marks = myScanner.nextDouble();
+            acc += marks;
         }
         System.out.println("The aversge of six marks is = " + acc / 6);
-        int acc = 0;
+        int sum = 0;
         for (int i = 1; i <= 5; i++) {
-        acc += i;
+            sum += i;
         }
-        System.out.println("the sum from 1 to 5 is = " + acc);
-    
+        System.out.println("the sum from 1 to 5 is = " + sum);
+
         int high = 0;
         for (int i = 0; i < 5; i++) {
-        int num = myScanner.nextInt();
-        if (num > high) {
-        high = num;
-        }
-        System.out.println("The highest number is: " + high);
+            int num = myScanner.nextInt();
+            if (num > high) {
+                high = num;
+            }
+            System.out.println("The highest number is: " + high);
 
         }
 
-        int low =Integer.MAX_VALUE;
+        int low = Integer.MAX_VALUE;
         int minIndex = 0;
-    
+
         System.out.println("please enter 5 integers");
         for (int i = 1; i <= 5; i++) {
 
