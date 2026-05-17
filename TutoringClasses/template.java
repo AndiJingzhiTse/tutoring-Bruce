@@ -4,9 +4,11 @@ import java.io.*;
 import java.util.*;
 
 class Class {
+
     static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) throws IOException {
-        
+
     }
 
     public static void println() {
@@ -28,8 +30,34 @@ class Class {
         println();
     }
 
+    public static void printArr(int[] arr) {
+        for (int obj : arr) {
+            print(obj + " ");
+        }
+        println();
+    }
+
+    public static void printArr(double[] arr) {
+        for (double obj : arr) {
+            print(obj + " ");
+        }
+        println();
+    }
+
     public static void print2DArr(Object[][] arr) {
         for (Object[] subArr : arr) {
+            printArr(subArr);
+        }
+    }
+
+    public static void print2DArr(int[][] arr) {
+        for (int[] subArr : arr) {
+            printArr(subArr);
+        }
+    }
+
+    public static void print2DArr(double[][] arr) {
+        for (double[] subArr : arr) {
             printArr(subArr);
         }
     }
